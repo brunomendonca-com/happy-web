@@ -2,19 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiPlus } from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import Leaflet from 'leaflet';
 
+import mapIcon from '../utils/mapIcon';
 import mapMarkerImg from '../images/map-marker.svg';
 
-import 'leaflet/dist/leaflet.css';
 import '../styles/pages/foster-homes-map.css';
-
-const mapIcon = Leaflet.icon({
-  iconUrl: mapMarkerImg,
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [170, 2],
-});
 
 const FosterHomesMap: React.FC = () => {
   return (
@@ -50,14 +42,14 @@ const FosterHomesMap: React.FC = () => {
             className="map-popup"
           >
             Calgary Foster
-            <Link to="">
+            <Link to="/fosterhomes/1">
               <FiArrowRight size={20} color="#fff" />
             </Link>
           </Popup>
         </Marker>
       </Map>
 
-      <Link to="" className="create-foster-home">
+      <Link to="/fosterhomes/create" className="create-foster-home">
         <FiPlus size={32} color="#fff" />
       </Link>
     </div>
