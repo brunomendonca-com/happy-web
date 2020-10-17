@@ -92,7 +92,8 @@
 
 .fosterhome-details .fosterhome-details-content .map-container .leaflet-container {
   border-bottom: 1px solid #DDE3F0;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .fosterhome-details .fosterhome-details-content hr {
