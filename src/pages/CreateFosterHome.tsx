@@ -41,8 +41,7 @@ const CreateFosterHome: React.FC = () => {
             <div className="input-block">
               <label htmlFor="about">
                 About
-{' '}
-                <span>300 characters max.</span>
+                <span> 300 characters max.</span>
               </label>
               <textarea id="name" maxLength={300} />
             </div>
@@ -72,7 +71,7 @@ const CreateFosterHome: React.FC = () => {
             </div>
 
             <div className="input-block">
-              <label htmlFor="open_on_weekends">Open at Weekends </label>
+              <label htmlFor="open_on_weekends">Open on Weekends</label>
 
               <div className="button-select">
                 <button type="button" className="active">
